@@ -1,0 +1,111 @@
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\csc.exe
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\csc.exe.config
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\csc.rsp
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\csi.exe
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\csi.rsp
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\System.AppContext.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\vbc.exe
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\vbc.exe.config
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\vbc.rsp
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\VBCSCompiler.exe
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\mertaksublogg.dll.config
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\mertaksublogg.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\mertaksublogg.pdb
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\EntityFramework.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\EntityFramework.SqlServer.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\System.Web.Helpers.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\System.Web.Mvc.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\System.Web.Razor.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\System.Web.Webpages.Deployment.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\System.Web.Webpages.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\System.Web.Webpages.Razor.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\EntityFramework.xml
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\EntityFramework.SqlServer.xml
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\System.Web.Razor.xml
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\System.Web.Webpages.xml
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\System.Web.Webpages.Deployment.xml
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\System.Web.Webpages.Razor.xml
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\System.Web.Helpers.xml
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\System.Web.Mvc.xml
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\obj\Debug\mertaksublogg.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\obj\Debug\mertaksublogg.pdb
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\PagedList.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\PagedList.Mvc.dll
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\PagedList.xml
+C:\Users\MERT\Documents\Visual Studio 2017\Projects\mertaksublogg\mertaksublogg\bin\PagedList.Mvc.xml
+C:\Users\MERT\documents\visual studio 2017\Projects\mertaksublogg\mertaksublogg\obj\Debug\mertaksublogg.csprojResolveAssemblyReference.cache
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\obj\Debug\mertaksublogg.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\obj\Debug\mertaksublogg.pdb
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\csc.exe
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\csc.exe.config
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\csc.rsp
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\csi.exe
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\csi.rsp
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\System.AppContext.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\vbc.exe
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\vbc.exe.config
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\vbc.rsp
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\VBCSCompiler.exe
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\mertaksublogg.dll.config
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\mertaksublogg.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\mertaksublogg.pdb
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\EntityFramework.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\EntityFramework.SqlServer.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\PagedList.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\PagedList.Mvc.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\System.Web.Helpers.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\System.Web.Mvc.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\System.Web.Razor.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\System.Web.Webpages.Deployment.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\System.Web.Webpages.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\System.Web.Webpages.Razor.dll
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\EntityFramework.xml
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\EntityFramework.SqlServer.xml
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\PagedList.xml
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\PagedList.Mvc.xml
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\System.Web.Razor.xml
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\System.Web.Webpages.xml
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\System.Web.Webpages.Deployment.xml
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\System.Web.Webpages.Razor.xml
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\System.Web.Helpers.xml
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\bin\System.Web.Mvc.xml
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\obj\Debug\mertaksublogg.csproj.CopyComplete
+C:\Users\MERT\source\repos\mertaksublogg\mertaksublogg\obj\Debug\mertaksublogg.csprojAssemblyReference.cache

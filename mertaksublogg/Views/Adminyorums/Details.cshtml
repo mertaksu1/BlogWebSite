@@ -1,0 +1,52 @@
+﻿@model mertaksublogg.Models.yorum
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="col-md-12">
+    <h2>Detay</h2>
+
+    <div>
+        <h4>Yorum</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.makale.baslik)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.makale.baslik)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.uye.kullaniciadi)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.uye.kullaniciadi)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.icerik)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.icerik)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.tarih)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.tarih)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Düzenle", "Edit", new { id = Model.yorumid }) |
+        @Html.ActionLink("Geri Dön", "Index")
+    </p>
+</div>

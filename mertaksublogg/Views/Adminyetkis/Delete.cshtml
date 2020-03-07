@@ -1,0 +1,35 @@
+﻿@model mertaksublogg.Models.yetki
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="col-md-7 content-left">
+    <h2>Sil</h2>
+
+    <h3>Emin misin?</h3>
+    <div>
+        <h4>Yetki</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.yetkiadi)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.yetkiadi)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-danger" /> |
+                @Html.ActionLink("Geri Dön", "Index")
+            </div>
+        }
+    </div>
+</div>

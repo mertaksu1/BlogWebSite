@@ -1,0 +1,36 @@
+﻿@model IEnumerable<mertaksublogg.Models.yetki>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-md-7 content-left">
+    <h2>Yetkiler</h2>
+
+    <p>
+        @Html.ActionLink("Yeni Yetki Ekle", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.yetkiadi)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.yetkiadi)
+                </td>
+                <td>
+                    @Html.ActionLink("Düzenle", "Edit", new { id = item.yetkiid }) |
+                    @Html.ActionLink("Sil", "Delete", new { id = item.yetkiid })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

@@ -1,0 +1,61 @@
+﻿@model mertaksublogg.Models.uye
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-md-7 "><br />
+    <center><h2><a href="/Uye/Index/@Session["uyeid"]">@Session["kullaniciadi"].ToString()</a> Üye Profiliz</h2></center>
+        <div>
+            <hr />
+            <dl class="dl-horizontal">
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.kullaniciadi)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.kullaniciadi)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.email)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.email)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.sifre)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.sifre)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.adisoyadi)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.adisoyadi)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.foto)
+                </dt>
+
+                <dd>
+                    <img src="@Model.foto" width="100" height="100" class="" alt="@Model.adisoyadi" />
+                </dd>
+
+            </dl>
+        </div>
+    <center>
+        <p>
+            @Html.ActionLink("Güncelle", "Edit", new { id = Model.uyeid }) |
+            <a class="d-block " href="/Uye/Delete/@Session["uyeid"]">Üyeliğimi Sil</a>
+        </p>
+    </center>
+</div>

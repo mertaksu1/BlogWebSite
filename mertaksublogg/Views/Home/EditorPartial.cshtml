@@ -1,0 +1,100 @@
+﻿@model IEnumerable<mertaksublogg.Models.makale>
+
+@{
+    Layout = null;
+}
+
+<div class="editors-pic-grids">
+
+
+
+    <h5>Editör Seçimleri</h5><br />
+    @foreach (var item in Model)
+    {
+        <div class="editors-pic">
+            <div class="e-pic">
+                <a href="/Home/MakaleDetay/@item.makaleid/"><img src="@item.kucukfoto" alt="" /></a>
+            </div>
+            <div class="e-pic-info">
+                <a href="/Home/MakaleDetay/@item.makaleid/">@item.baslik</a>
+                <span></span>
+                <label>@String.Format("{0:dd MMMM yyyy }", item.tarih)</label>
+            </div>
+            <div class="clearfix"></div> 
+        </div>
+    }
+</div>
+
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.kategori.kategoriadi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.uye.kullaniciadi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.baslik)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ozet)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.icerik)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.buyukfoto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.kucukfoto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tarih)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.okunma)
+            </th>
+            <th></th>
+        </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.kategori.kategoriadi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.uye.kullaniciadi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.baslik)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ozet)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.icerik)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.buyukfoto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.kucukfoto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tarih)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.okunma)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.makaleid }) |
+                @Html.ActionLink("Details", "Details", new { id=item.makaleid }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.makaleid })
+            </td>
+        </tr>
+    }
+
+    </table>*@

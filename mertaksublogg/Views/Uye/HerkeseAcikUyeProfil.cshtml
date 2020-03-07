@@ -1,0 +1,66 @@
+﻿@model mertaksublogg.Models.uye
+
+@{
+    ViewBag.Title = "HerkeseAcikUyeProfil";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-md-7">
+    <br />
+    <h2>Üye Profili</h2>
+
+    <div>
+        
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                Yetki
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.yetki.yetkiadi)
+            </dd>
+
+
+
+            <dt>
+                Email
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.email)
+            </dd>
+
+
+
+            <dt>
+                Ad Soyad
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.adisoyadi)
+            </dd>
+            
+            <dt>
+                @Html.DisplayNameFor(model => model.foto)
+            </dt>
+
+            <dd>
+                <img src="@Model.foto" alt="Alternate Text" />
+            </dd>
+
+        </dl>
+        <br />
+
+        <h4>Son Eklediği Makaleler</h4>
+        <br />
+        <div class="col-md-7">
+            @foreach (var item in Model.makales.OrderByDescending(m => m.makaleid).Take(5))
+            {
+                <ul>
+                    <li><a href="/Home/MakaleDetay/@item.makaleid">@item.baslik</a></li>
+                </ul>
+            }
+            <br>
+        </div>
+    </div>
+</div>

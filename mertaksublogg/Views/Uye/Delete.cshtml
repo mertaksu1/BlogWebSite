@@ -1,0 +1,68 @@
+﻿@model mertaksublogg.Models.uye
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<div class="col-md-7">
+    <center><h2>Profili Sil</h2></center>
+
+    <center><h3>Silmek istediğine emin misin?</h3><br /></center>
+    <div>
+       
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.kullaniciadi)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.kullaniciadi)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.email)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.email)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.sifre)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.sifre)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.adisoyadi)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.adisoyadi)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.foto)
+            </dt>
+
+            <dd>
+                <img src="@Model.foto" width="100" height="100" class="" alt="@Model.adisoyadi" />
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <center>
+                <div class="form-actions no-color">
+                    <input type="submit" value="Sil" class="btn btn-danger" /> |
+                    <a class="d-block" href="/Uye/Index/@Session["uyeid"]">Geri Dön</a>
+                </div>
+            </center>
+        }
+    </div>
+</div>

@@ -1,0 +1,115 @@
+﻿@model mertaksublogg.Models.makale
+
+@{
+    ViewBag.Title = "MakaleDetay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-7 printing-content">
+
+    <div class="print-main">
+        <h3>@Model.baslik</h3>
+        <a>@Model.ozet</a>
+        <p class="sub_head">Yazar by <a href="/Uye/HerkeseAcikUyeProfil/@Model.uyeid">@Model.uye.kullaniciadi</a> || Tarih => @String.Format("{0:dd MMMM yyyy }", Model.tarih)|| Tıklanma => @Model.okunma</p>
+        <img src="@Model.buyukfoto" class="img-responsive" alt="" /><br />
+        <p class="text" size="12">@Html.Raw(Model.icerik)</p>
+
+    </div><br /><br />
+    @if (Session["uyeid"] != null)
+    {
+        <div class="single">
+            <div class="leave">
+                <h4>Yorum Yap</h4>
+            </div>
+            <!-- Comments Form -->
+            <div class="card my-4">
+                
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <textarea id="yorum" typeof="text" class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="submit" id="gonder" class="btn btn-primary">Gönder</button><br />
+                    </form>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <h4><u>Makaleye yorum yapmak için üye olmalısınız</u></h4><br />
+                <p><a href="/Uye/Login/">Giriş Yap</a> / <a href="/Uye/Create/">Üye Ol</a></p>
+    }
+
+    <div class="comments1">
+        @if (Model.yorums.Count == 0)
+        {
+            <h4>Yorum Yok</h4>
+        }
+        else
+        {
+            <h4>Yorumlar</h4>
+        }
+        
+        @foreach (var item in Model.yorums.ToList())
+        {
+            <div class="comments-main">
+                <div class="col-md-3 cmts-main-left">
+                    <img src="@item.uye.foto" alt="">
+                </div>
+                <div class="col-md-9 cmts-main-right">
+                    <a href="/Uye/HerkeseAcikUyeProfil/@Model.uyeid"><h5> @item.uye.kullaniciadi</h5></a>
+                    <p>
+                        @item.icerik @if (Convert.ToInt32(Session["uyeid"]) == item.uyeid)
+                        {
+                            <a class="btn btn-danger" href="/Home/YorumSil/@item.yorumid/">Sil</a>
+                        }
+                    </p>
+                    <div class="cmts">
+                        <div class="col-md-6 cmnts-left">
+                            <p>@String.Format("{0:dd MMMM yyyy }", item.tarih)</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        }
+
+
+    </div>
+
+
+
+    <script src="~/Content/admin/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Content/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $("#gonder").click(function () {
+            var yorumunuz = $("#yorum").val();
+            $.ajax({
+                url: '/Home/YorumYap',
+                data: { yorum: yorumunuz, Makaleid:@Model.makaleid },
+                type: 'POST',
+                dateType: 'json',
+                success: function (data) {
+                    alert("Başarılı " + yorumunuz);
+                }
+            });
+        });
+    })
+
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $.ajax({
+            url: '/Home/OkunmaArttir',
+            data: { Makaleid: @Model.makaleid },
+            type: 'POST',
+        });
+    })
+    </script>
+
+</div>

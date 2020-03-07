@@ -1,0 +1,60 @@
+﻿@model IEnumerable<mertaksublogg.Models.makale>
+
+@{
+    ViewBag.Title = "BlogAra";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-md-7 content-left">
+    <br />
+    <h4>&nbsp; Aradığınız İçerikteki Makaleler</h4>
+    <br />
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.kategori.kategoriadi)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.baslik)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.buyukfoto)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.tarih)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.okunma)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.kategori.kategoriadi)
+                </td>
+             
+                <td>
+                    @Html.DisplayFor(modelItem => item.baslik)
+                </td>
+                <td>
+                    <img class="" width="65" src="@item.buyukfoto" alt="@item.baslik" />
+                </td>
+
+                <td>
+                    @String.Format("{0:dd MMMM yyyy }", item.tarih)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.okunma)
+                </td>
+
+            </tr>
+        }
+
+    </table>
+</div>

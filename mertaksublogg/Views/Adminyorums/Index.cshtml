@@ -1,0 +1,59 @@
+﻿@model IEnumerable<mertaksublogg.Models.yorum>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="col-md-12">
+    <h2>Yorumlar</h2>
+
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.makale.baslik)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.uye.kullaniciadi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.icerik)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tarih)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.makale.baslik)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.uye.kullaniciadi)
+                </td>
+                <td>
+                    @if (item.icerik.Length > 75)
+                    {
+                        @Html.Raw(item.icerik.Substring(0, 75)) 
+                    }
+                    else
+                    {
+                        @Html.DisplayFor(modelItem => item.icerik) 
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tarih)
+                </td>
+                <td>
+                    @Html.ActionLink("Düzenle", "Edit", new { id = item.yorumid }) |
+                    @Html.ActionLink("Detay", "Details", new { id = item.yorumid }) |
+                    @Html.ActionLink("Sil", "Delete", new { id = item.yorumid })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

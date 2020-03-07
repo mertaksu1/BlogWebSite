@@ -1,0 +1,106 @@
+﻿<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mert Aksu Blog</title>
+    <link href="/Content/web/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <link href="/Content/web/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+    <script src="/Content/web/js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Konstructs Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</head>
+<body>
+    <!-- header-section-starts -->
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="/Home/Index/"><h1>Mert Aksu</h1></a>
+            </div>
+            
+            <div class="navigation">
+                <ul>
+                    <li><a href="/Home/Index/">Anasayfa</a></li>
+                    <li><a href="/Home/Hakkimda/">Hakkımda</a></li>
+                    <li><a  href="/Home/Iletisim/">İletişim</a></li>
+                    @if (Session["uyeid"] != null)
+                    {
+                        <li><a href="/Uye/Logout/">Çıkış</a></li>
+                        <li><a href="/Uye/Index/@Session["uyeid"]">@Session["kullaniciadi"].ToString()</a></li>
+
+                        if (Convert.ToInt32(Session["yetkiid"]) == 1)
+                        {
+                            <li><a href="/Admin/Index/" target="_blank">Admin Paneli</a></li>
+                        }
+                    }
+                    else
+                    {
+                        <li><a href="/Uye/Create/">Kayıt Ol</a></li>
+                        <li><a href="/Uye/Login/">Giriş Yap</a></li>
+                    }
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="content">
+           
+            @RenderBody()
+
+            <div class="col-md-5 content-right">
+                @using (Html.BeginForm("BlogAra", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input id="Ara" name="Ara" type="text" class="form-control" placeholder="Anahtar Kelimeleri Giriniz...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="submit">Ara!</button>
+                            </span>
+                        </div>
+                    </div>
+                }
+                <br />
+                @{
+                    Html.RenderAction("PopulerPartial", "Home");
+                } 
+
+                @{
+                    Html.RenderAction("EditorPartial", "Home");
+                } 
+            </div> 
+            <div class="clearfix"></div>
+            <div class="features">
+                <h5>Bill Gates</h5>
+                <h2>Başarıyı kutlamak güzeldir, ama başarısızlıklardan alınacak dersleri unutmamak daha önemlidir. </h2><br />
+                <h2>Ben bazı derslerin sınavlarını geçemedim; ama arkadaşım hepsini geçti. Onlar şimdi Microsoft'ta başarılı bir mühendis, ben Microsoft'un sahibiyim. </h2><br />
+                
+            </div> @*resim fonlu söz*@
+            
+            
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="footer">
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyrights">
+                    <p>© 2019 Bu template Mert Aksu tarafından değiştirilmiştir. | Template by  <a target="_blank" href="http://w3layouts.com">  W3layouts</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿@model mertaksublogg.Models.yetki
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>yetki</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.yetkiadi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.yetkiadi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.yetkiid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

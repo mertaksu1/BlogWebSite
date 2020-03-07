@@ -1,0 +1,92 @@
+﻿@model mertaksublogg.Models.makale
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="col-md-12">
+    <h2>Detay</h2>
+
+    <div>
+        <h4>Makale</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.kategori.kategoriadi)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.kategori.kategoriadi)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.uye.kullaniciadi)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.uye.kullaniciadi)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.baslik)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.baslik)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ozet)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ozet)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.icerik)
+            </dt>
+
+            <dd>
+                @Html.Raw(Model.icerik)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.buyukfoto)
+            </dt>
+
+            <dd>
+                <img width="175" src="@Model.buyukfoto" />
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.kucukfoto)
+            </dt>
+
+            <dd>
+                <img width="175" src="@Model.kucukfoto" />
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.tarih)
+            </dt>
+
+            <dd>
+                @String.Format("{0:dd MMMM yyyy }", Model.tarih)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.okunma)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.okunma)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Düzenle", "Edit", new { id = Model.makaleid }) |
+        @Html.ActionLink("Geri Dön", "Index")
+    </p>
+</div>
